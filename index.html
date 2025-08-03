@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prince Mishra | Portfolio</title>
+  <link rel="stylesheet" href="skills.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+
+    /U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>PRINCE</h1>
+  <!--nave stert-->
+<!-- Hamburger menu for mobile -->
+  <input type="checkbox" id="toggle" class="menu-toggle">
+  <label for="toggle" class="menu-icon">
+    <i class="fas fa-bars"></i>
+  </label>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="/index.html">Home</a>
+    <a href="https://codewithprince-07.github.io/About/">About</a>
+    <a href="https://codewithprince-07.github.io/skill/">Skills</a>
+    <a href="https://codewithprince-07.github.io/project/">Projects</a>
+    <a href="https://form.jotform.com/252129103567454">Contact</a>
+    <i class="fa-solid fa-moon" id="themeToggle"></i>
+  </div>
+  <!--nave End-->
+  <img src="imge.jpg" alt="my imag">
+  <div class="text-content">
+    <h1>Hello, I'm <span style="color: blueviolet;">Prince Mishra</span></h1>
+    &nbsp;<h3>A Passionate <span id="element" style="color: rgb(247, 104, 164);""></span> </h3><br>
+   <p>
+    I design and build clean, modern, 
+    and fully  <br>responsive websites.
+    I use <b style=" color: rgb(234, 215, 215);">HTML, CSS, JavaScript, <br>
+        and modern tools & frameworks.</b>
+        Let's create something <br>amazing
+        that works on every device.
+        </p>
+  </div>
+  <br>
+
+  <div class="media">
+    <a href="https://github.com/PM405"> <i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/prince-mishra-499a142b7/"> <i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://x.com/PrinceM43790718" <i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/princ.emishra027/"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+
+  
+  <!-- Element to contain animated typing -->
+
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+
+
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>First</i> Web Development.', 'And I am an AI Engineer.'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  </script>
+  <script>
+  const toggleIcon = document.getElementById('themeToggle');
+
+  toggleIcon.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    
+    // Optional: Change icon from moon to sun
+    if (document.body.classList.contains('light-mode')) {
+      toggleIcon.classList.remove('fa-moon');
+      toggleIcon.classList.add('fa-sun');
+    } else {
+      toggleIcon.classList.remove('fa-sun');
+      toggleIcon.classList.add('fa-moon');
+    }
+  });
+</script>
+
+
+
+</body>
+</html>

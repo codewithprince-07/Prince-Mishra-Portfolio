@@ -1,0 +1,262 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+  font-style: italic;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  display: flex;
+  font-size: larger;
+  gap: 50px;
+  padding: 10px 20px;
+  background: transparent;
+}
+
+.navbar a,
+.navbar i {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Heading */
+h1 {
+  color: white;
+  margin-top: 70px;
+  margin-left: 200px;
+  font-size: 40px;
+}
+
+h1::first-letter {
+  color: red;
+}
+
+/* Hero Text */
+.text-content {
+  margin-top: 0px;
+  color: white;
+  margin-left: 90px;
+  font-size: larger;
+}
+
+.text-content h3 {
+  color: bisque;
+  font-size: 25px;
+}
+
+.text-content p {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* Image Styling */
+img {
+  position: absolute;
+  top: 100px;
+  right: 65px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow:
+    0 8px 10px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background-color: #333;
+    gap: 30px;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+  }
+
+  .menu-toggle:checked ~ .navbar {
+    right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  h1 {
+    margin-left: 20px;
+    font-size: 30px;
+  }
+
+  .text-content {
+    margin: 20px;
+  }
+
+  img {
+    position: static;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 30px auto;
+  }
+}
+
+
+
+
+
+
+.text-content {
+  color: white;
+  margin-top: 150px;
+  margin-left: 90px;
+  font-size: larger;
+}
+
+.text-content h1 {
+  margin-left: 19px;
+}
+
+.text-content h3 {
+  color: bisque;
+  font-size: 25px;
+}
+
+.text-content p {
+  font-size: 26px;
+}
+
+.media {
+  margin-left: 500px;
+  width: 180px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  margin: 10px;
+}
+
+.media a {
+  margin-left: 500px;
+  text-decoration: none;
+  color: #000;
+  margin: 8px;
+  font-size: larger;
+}
+
+.media {
+  margin-left: 200px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: bolder;
+  border-radius: 1.2rem;
+}
+
+/* Rensposive*/
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+
+  img {
+    position: static;
+    display: block;
+    margin: 30px auto;
+    width: 250px;
+    height: 250px;
+  }
+
+  .text-content {
+    margin: 20px;
+    text-align: center;
+    font-size: medium;
+  }
+
+  .text-content p {
+    font-size: 18px;
+  }
+
+  .text-content h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    gap: 10px;
+  }
+  .text-content{
+    padding-left: 0px;
+  }
+
+  .text-content h1 {
+    font-size: 22px;
+  }
+
+  .text-content h3 {
+    font-size: 18px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .media a {
+    font-size: 16px;
+  }
+}
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .navbar a,
+body.light-mode .navbar i {
+  color: black;
+}
