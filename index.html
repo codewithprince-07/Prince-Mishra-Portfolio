@@ -4,116 +4,1359 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prince Mishra | Portfolio</title>
+
+  <meta name="description" content="Prince Mishra — Web Developer, Machine Learning Enthusiast and Future AI Engineer">
+
+  <meta name="author" content="Prince Mishra">
+
+  <title>Prince Mishra | Creative Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="m.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="skills.css">
-  <meta name="google-site-verification" content="0BHKoDAAHIdWwbRJGHTFA_QSYuCXytk4YXdWHLbzLv0" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+
-    /U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
-    <link rel="icon"  href="m.jpg">
-  
-
 </head>
 
+
 <body>
-  <h1>PRINCE</h1>
-  <!--nave stert-->
-<!-- Hamburger menu for mobile -->
-  <input type="checkbox" id="toggle" class="menu-toggle">
-  <label for="toggle" class="menu-icon">
-    <i class="fas fa-bars"></i>
-  </label>
 
-  <!-- Navbar -->
-  <div class="navbar">
-    <a href="https://codewithprince-07.github.io/Prince-Mishra-Portfolio/">Home</a>
-    <a href="https://codewithprince-07.github.io/About/">About</a>
-    <a href="https://codewithprince-07.github.io/skill/">Skills</a>
-    <a href="https://codewithprince-07.github.io/project/">Projects</a>
-    <a href="https://form.jotform.com/252129103567454">Contact</a>
-    <i class="fa-solid fa-moon" id="themeToggle"></i>
+  <!-- =========================================
+         NOISE EFFECT
+    ========================================== -->
+
+  <div class="noise"></div>
+
+
+  <!-- =========================================
+         CUSTOM CURSOR
+    ========================================== -->
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+
+  <!-- =========================================
+         ANIMATED STAR BACKGROUND
+    ========================================== -->
+
+  <canvas id="stars"></canvas>
+
+
+  <!-- =========================================
+         PRELOADER
+    ========================================== -->
+
+  <div class="preloader" id="preloader">
+
+    <div class="loader-name">
+      PRINCE<span>.</span>
+    </div>
+
+    <div class="loader-line">
+      <i></i>
+    </div>
+
+    <small>
+      INITIALIZING PORTFOLIO
+    </small>
+
   </div>
-  <!--nave End-->
-  <img src="m.jpg" alt="my imag">
- <div class="text-content">
-    <h1>Hello, I'm <span style="color: blueviolet;">Prince Mishra</span></h1>
 
-    <h3>I'm a <span id="element" style="color: rgb(247, 104, 164);"></span></h3>
+
+
+  <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+  <header class="nav" id="nav">
+
+    <!-- Logo -->
+
+    <a href="#home" class="logo">
+
+      <b>P</b>
+
+      <span>
+        Prince Mishra
+      </span>
+
+    </a>
+
+
+    <!-- Mobile Menu -->
+
+    <button class="menu" id="menu" aria-label="Open Menu">
+
+      <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+
+    <!-- Navigation -->
+
+    <nav id="links">
+
+      <a href="#home" class="active">
+        Home
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#skills">
+        Skills
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <!-- Theme Button -->
+
+    <button class="theme" id="theme" aria-label="Change Theme">
+
+      <i class="fa-solid fa-moon"></i>
+
+    </button>
+
+  </header>
+
+
+
+  <!-- =========================================
+         MAIN
+    ========================================== -->
+
+  <main>
+
+
+    <!-- =====================================
+             HERO SECTION
+        ====================================== -->
+
+    <section class="hero" id="home">
+
+
+      <!-- LEFT SIDE -->
+
+      <div class="hero-left reveal">
+
+
+        <div class="availability">
+
+          <span></span>
+
+          Available for creative opportunities
+
+        </div>
+
+
+        <p class="mini-title">
+          HELLO, I'M
+        </p>
+
+
+        <h1>
+
+          Prince
+
+          <br>
+
+          <em>
+            Mishra
+          </em>
+
+          <sup>
+            01
+          </sup>
+
+        </h1>
+
+
+        <div class="role">
+
+          I create
+
+          <strong id="typed"></strong>
+
+          <b class="caret">
+            _
+          </b>
+
+        </div>
+
+
+        <p class="intro">
+
+          Web developer with a passion for building
+          beautiful digital experiences, solving real
+          problems and exploring Artificial Intelligence.
+
+        </p>
+
+
+        <!-- Hero Buttons -->
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="magnetic primary">
+
+            Explore my work
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+          </a>
+
+
+          <a href="https://form.jotform.com/252129103567454" target="_blank" rel="noopener noreferrer"
+            class="magnetic secondary">
+
+            Let's connect
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+          </a>
+
+        </div>
+
+
+        <!-- Social Media -->
+
+        <div class="socials">
+
+          <a href="https://github.com/PM405" target="_blank" rel="noopener noreferrer">
+
+            <i class="fa-brands fa-github"></i>
+
+          </a>
+
+
+          <a href="https://www.linkedin.com/in/prince-mishra-499a142b7/" target="_blank" rel="noopener noreferrer">
+
+            <i class="fa-brands fa-linkedin-in"></i>
+
+          </a>
+
+
+          
+
+
+          
+
+        </div>
+
+      </div>
+
+
+
+      <!-- RIGHT SIDE -->
+
+      <div class="hero-right reveal">
+
+
+        <div class="halo"></div>
+
+
+        <div class="photo-orbit orbit-a"></div>
+
+        <div class="photo-orbit orbit-b"></div>
+
+
+        <!-- Profile Card -->
+
+        <div class="photo-card" id="photoCard">
+
+
+          <div class="scan"></div>
+
+
+          <div class="photo-top">
+
+            <span>
+              PM / 2026
+            </span>
+
+            <span>
+              CREATIVE DEV
+            </span>
+
+          </div>
+
+
+          <div class="photo-frame">
+
+            <img src="m.jpg" alt="Prince Mishra">
+
+            <div class="frame-corner tl"></div>
+
+            <div class="frame-corner tr"></div>
+
+            <div class="frame-corner bl"></div>
+
+            <div class="frame-corner br"></div>
+
+          </div>
+
+
+          <div class="photo-bottom">
+
+            <span>
+
+              BUILDING
+              <br>
+
+              <b>
+                THE FUTURE
+              </b>
+
+            </span>
+
+
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
+
+          </div>
+
+        </div>
+
+
+        <!-- Floating Skill Chips -->
+
+        <div class="floating-chip chip-one">
+
+          <i class="fa-brands fa-java"></i>
+
+          Java
+
+        </div>
+
+
+        <div class="floating-chip chip-two">
+
+          <i class="fa-solid fa-brain"></i>
+
+          AI / ML
+
+        </div>
+
+
+        <div class="scroll-label">
+
+          SCROLL TO EXPLORE
+
+          <i class="fa-solid fa-arrow-down"></i>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+             MARQUEE
+        ====================================== -->
+
+    <section class="marquee">
+
+      <div class="marquee-track">
+
+        <span>
+          WEB DEVELOPMENT
+        </span>
+
+        <i>✦</i>
+
+        <span>
+          CREATIVE CODE
+        </span>
+
+        <i>✦</i>
+
+        <span>
+          MACHINE LEARNING
+        </span>
+
+        <i>✦</i>
+
+        <span>
+          PROBLEM SOLVING
+        </span>
+
+        <i>✦</i>
+
+
+        <span>
+          WEB DEVELOPMENT
+        </span>
+
+        <i>✦</i>
+
+        <span>
+          CREATIVE CODE
+        </span>
+
+        <i>✦</i>
+
+        <span>
+          MACHINE LEARNING
+        </span>
+
+        <i>✦</i>
+
+        <span>
+          PROBLEM SOLVING
+        </span>
+
+        <i>✦</i>
+
+      </div>
+
+    </section>
+
+
+
+
+    <!-- =====================================
+     ABOUT SECTION
+====================================== -->
+
+    <section class="section about" id="about">
+
+      <div class="section-label reveal">
+        <span>02</span>
+        <p>WHO I AM</p>
+      </div>
+
+      <div class="about-layout">
+
+        <!-- LEFT -->
+        <div class="about-title reveal">
+
+          <p>CURIOUS MIND. CREATIVE BUILDER.</p>
+
+          <h2>
+            I don't just
+            <br>
+            <em>write code.</em>
+          </h2>
+
+        </div>
+
+
+        <!-- RIGHT -->
+        <div class="about-copy reveal">
+
+          <p class="big">
+
+            I'm <span>Prince Mishra</span>,
+            a developer who loves turning
+            ideas into real digital experiences.
+
+          </p>
+
+          <p>
+
+            I enjoy building modern, responsive and
+            user-friendly web applications. From designing
+            the interface to developing the backend, I like
+            understanding how everything works together.
+
+          </p>
+
+          <p>
+
+            My journey started with web development and
+            gradually grew into a deeper interest in
+            <strong>Artificial Intelligence, Machine Learning
+              and problem solving.</strong>
+
+          </p>
+
+          <p>
+
+            I believe the best way to learn technology is
+            to build with it. That's why I continuously
+            experiment with new ideas, create projects and
+            turn what I learn into something useful.
+
+          </p>
+
+
+          <!-- About Facts -->
+
+          <div class="about-facts">
+
+            <div>
+              <b>01+</b>
+
+              <small>
+                YEARS
+                <br>
+                LEARNING
+              </small>
+            </div>
+
+
+            <div>
+              <b>10+</b>
+
+              <small>
+                PROJECTS
+                <br>
+                BUILT
+              </small>
+            </div>
+
+
+            <div>
+              <b>∞</b>
+
+              <small>
+                IDEAS
+                <br>
+                TO BUILD
+              </small>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PERSONALITY STRIP -->
+
+      <div class="about-strip reveal">
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <span>BUILD</span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-lightbulb"></i>
+          <span>CREATE</span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-brain"></i>
+          <span>LEARN</span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-rocket"></i>
+          <span>GROW</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+             SKILLS
+        ====================================== -->
+
+    <section class="section skills" id="skills">
+
+
+      <div class="section-label reveal">
+
+        <span>
+          03
+        </span>
+
+        <p>
+          MY ARSENAL
+        </p>
+
+      </div>
+
+
+      <div class="skills-head reveal">
+
+        <h2>
+
+          Tools I use to
+
+          <br>
+
+          <em>
+            make things happen.
+          </em>
+
+        </h2>
+
+
+        <p>
+
+          From pixels to backend logic —
+          I enjoy working across the stack.
+
+        </p>
+
+      </div>
+
+
+      <!-- Skill Orbit -->
+
+      <div class="skill-stage reveal">
+
+
+        <div class="skill-center">
+
+          <span>
+            PM
+          </span>
+
+          <small>
+            STACK
+          </small>
+
+        </div>
+
+
+        <div class="skill-orbit so1"></div>
+
+        <div class="skill-orbit so2"></div>
+
+
+        <div class="skill-item si1">
+
+          <i class="fa-brands fa-html5"></i>
+
+          <span>
+            HTML
+          </span>
+
+        </div>
+
+
+        <div class="skill-item si2">
+
+          <i class="fa-brands fa-css3-alt"></i>
+
+          <span>
+            CSS
+          </span>
+
+        </div>
+
+
+        <div class="skill-item si3">
+
+          <i class="fa-brands fa-js"></i>
+
+          <span>
+            JavaScript
+          </span>
+
+        </div>
+
+
+        <div class="skill-item si4">
+
+          <i class="fa-brands fa-node-js"></i>
+
+          <span>
+            Node.js
+          </span>
+
+        </div>
+
+
+        <div class="skill-item si5">
+
+          <i class="fa-solid fa-database"></i>
+
+          <span>
+            MongoDB
+          </span>
+
+        </div>
+
+
+        <div class="skill-item si6">
+
+          <i class="fa-brands fa-java"></i>
+
+          <span>
+            java
+          </span>
+
+        </div>
+
+
+        <div class="skill-item si7">
+
+          <i class="fa-brands fa-python"></i>
+
+          <span>
+            Python
+          </span>
+
+        </div>
+
+
+        <div class="skill-item si8">
+
+          <i class="fa-brands fa-git-alt"></i>
+
+          <span>
+            Git
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+             PROJECTS
+        ====================================== -->
+
+    <section class="section projects" id="projects">
+
+
+      <div class="section-label reveal">
+
+        <span>
+          04
+        </span>
+
+        <p>
+          SELECTED WORK
+        </p>
+
+      </div>
+
+
+      <div class="projects-head reveal">
+
+        <h2>
+
+          Made with
+
+          <br>
+
+          <em>
+            purpose.
+          </em>
+
+        </h2>
+
+
+        <p>
+
+          A few things I've built while
+          learning, experimenting and
+          solving real-world problems.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- =================================
+                 PROJECT 01
+            ================================== -->
+
+      <article class="project-card reveal">
+
+
+        <div class="project-number">
+          01
+        </div>
+
+
+        <div class="project-info">
+
+          <p class="project-type">
+            FULL-STACK WEB APP
+          </p>
+
+
+          <h3>
+
+            WorldStay<span>
+              Hub
+            </span>
+
+          </h3>
+
+
+          <p>
+
+            Online stay discovery, booking and
+            notification management system.
+            Built with authentication, listings,
+            booking workflows and email notifications.
+
+          </p>
+
+
+          <div class="stack">
+
+            <b>
+              Node.js
+            </b>
+
+            <b>
+              Express
+            </b>
+
+            <b>
+              MongoDB
+            </b>
+
+            <b>
+              EJS
+            </b>
+
+            <b>
+              Nodemailer
+            </b>
+
+          </div>
+
+
+          <a href="https://github.com/PM405" target="_blank" rel="noopener noreferrer" class="project-link">
+
+            VIEW ON GITHUB
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+          </a>
+
+        </div>
+
+
+        <div class="project-preview">
+
+          <div class="browser">
+
+            <div class="browser-top">
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <small>
+                worldstayhub
+              </small>
+
+            </div>
+
+
+            <div class="mock-site">
+
+              <div class="mock-nav">
+
+                <b>
+
+                  World<span>
+                    Stay
+                  </span>Hub
+
+                </b>
+
+                <i class="fa-solid fa-user"></i>
+
+              </div>
+
+
+              <div class="mock-hero">
+
+                <small>
+                  DISCOVER YOUR NEXT
+                </small>
+
+                <h4>
+                  Perfect Stay.
+                </h4>
+
+
+                <div class="mock-search">
+
+                  <i class="fa-solid fa-location-dot"></i>
+
+                  Search Goa, Manali, Jaipur...
+
+                </div>
+
+              </div>
+
+
+              <div class="mock-list">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+<br>
+
+      <!-- =================================
+                 PROJECT 02 - AI CHATBOX
+            ================================== -->
+
+      <article class="project-card reveal">
+
+
+        <div class="project-number">
+          02
+        </div>
+
+
+        <div class="project-info">
+
+          <p class="project-type">
+            AI / FULL-STACK
+          </p>
+
+
+          <h3>
+            AI
+            <span>
+              Chatbox
+            </span>
+          </h3>
+
+
+          <p>
+
+            My personal AI chatbox built using
+            Node.js and modern AI API integration.
+            It provides an interactive conversational
+            experience through a clean and responsive interface.
+
+          </p>
+
+
+          <div class="stack">
+
+            <b>
+              Node.js
+            </b>
+
+            <b>
+              JavaScript
+            </b>
+
+            <b>
+              AI API
+            </b>
+
+            <b>
+              HTML
+            </b>
+
+            <b>
+              CSS
+            </b>
+
+          </div>
+
+
+          <a href="https://aichatboxx.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+
+            TRY AI CHATBOX
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+          </a>
+
+        </div>
+
+
+        <div class="project-preview">
+
+          <div class="browser">
+
+            <div class="browser-top">
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <small>
+                ai-chatbox
+              </small>
+
+            </div>
+
+
+            <div class="mock-site ai-preview">
+
+              <div class="mock-nav">
+
+                <b>
+                  AI<span>
+                    Chatbox
+                  </span>
+                </b>
+
+                <i class="fa-solid fa-robot"></i>
+
+              </div>
+
+
+              <div class="chat-preview">
+
+                <div class="bot-message">
+
+                  <i class="fa-solid fa-robot"></i>
+
+                  Hello Prince 👋
+                  How can I help you?
+
+                </div>
+
+
+                <div class="user-message">
+
+                  Tell me something interesting.
+
+                </div>
+
+
+                <div class="bot-message">
+
+                  <i class="fa-solid fa-sparkles"></i>
+
+                  Let's explore an idea together...
+
+                </div>
+
+              </div>
+
+
+              <div class="chat-input">
+
+                Ask anything...
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+     <br>
+
+      <!-- =================================
+                 PROJECT 03 - PRINCETUBE
+            ================================== -->
+
+      <article class="project-card reveal">
+
+
+        <div class="project-number">
+          03
+        </div>
+
+
+        <div class="project-info">
+
+          <p class="project-type">
+            WEB APPLICATION
+          </p>
+
+
+          <h3>
+
+            Prince<span>
+              Tube
+            </span>
+
+          </h3>
+
+
+          <p>
+
+            Search anything — songs, motivation,
+            education and more. A simple video
+            discovery platform designed for fast
+            and easy exploration.
+
+          </p>
+
+
+          <div class="stack">
+
+            <b>
+              HTML
+            </b>
+
+            <b>
+              CSS
+            </b>
+
+            <b>
+              JavaScript
+            </b>
+
+            <b>
+              Video API
+            </b>
+
+          </div>
+
+
+          <a href="https://codewithprince-07.github.io/PrinceVideo/" target="_blank" rel="noopener noreferrer"
+            class="project-link">
+
+            EXPLORE NOW
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+          </a>
+
+        </div>
+
+
+        <div class="project-preview">
+
+          <div class="browser">
+
+            <div class="browser-top">
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <small>
+                PrinceTube
+              </small>
+
+            </div>
+
+
+            <div class="mock-site">
+
+              <div class="mock-nav">
+
+                <b>
+
+                  Prince<span>
+                    Tube
+                  </span>
+
+                </b>
+
+                <i class="fa-solid fa-play"></i>
+
+              </div>
+
+
+              <div class="video-preview">
+
+                <img src="b.png" alt="PrinceTube Video Explorer">
+
+                <div class="video-overlay">
+
+                  <i class="fa-solid fa-play"></i>
+
+                </div>
+
+              </div>
+
+
+              <div class="video-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Search songs, education, motivation...
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- MORE PROJECTS -->
+
+      <div class="coming reveal">
+
+        <span>
+          MORE IN THE LAB
+        </span>
+
+        <div></div>
+
+        <p>
+          New projects loading...
+        </p>
+
+        <i class="fa-solid fa-ellipsis"></i>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+             CONTACT
+        ====================================== -->
+
+    <section class="section contact" id="contact">
+
+
+      <div class="contact-box reveal">
+
+
+        <div class="contact-number">
+          05
+        </div>
+
+
+        <div>
+
+          <p class="section-mini">
+            HAVE AN IDEA?
+          </p>
+
+
+          <h2>
+
+            Let's make
+
+            <br>
+
+            <em>
+              something memorable.
+            </em>
+
+          </h2>
+
+
+          <p class="contact-copy">
+
+            Have a project, collaboration
+            or simply want to say hello?
+            My inbox is open.
+
+          </p>
+
+        </div>
+
+
+        <a href="https://form.jotform.com/252129103567454" target="_blank" rel="noopener noreferrer"
+          class="contact-button magnetic">
+
+          <span>
+            START A CONVERSATION
+          </span>
+
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+  <footer>
+
+
+    <div class="footer-logo">
+
+      PRINCE<span>.</span>
+
+    </div>
+
 
     <p>
-        I design and develop modern, responsive,
-        and user-friendly web applications.<br>
-        Skilled in <b style="color: rgb(234, 215, 215);">
-        HTML, CSS, JavaScript, React, and Node.js</b>.<br>
-        Passionate about Web Development,
-        Machine Learning, and <br>creating innovative solutions.
+
+      Designed & built by Prince Mishra
+
+      ©
+
+      <span id="year"></span>
+
     </p>
-</div>
-  <br>
-
-  <div class="media">
-    <a href="https://github.com/PM405"> <i class="fa-brands fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/prince-mishra-499a142b7/"> <i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://x.com/PrinceM43790718" <i class="fa-brands fa-x-twitter"></i></a>
-    <a href="https://www.instagram.com/princ.emishra027/"><i class="fa-brands fa-instagram"></i></a>
-  </div>
-
-  
-  <!-- Element to contain animated typing -->
 
 
-  <!-- Load library from the CDN -->
+    <a href="#home">
+
+      <i class="fa-solid fa-arrow-up"></i>
+
+    </a>
+
+  </footer>
+
+
+
+  <!-- =========================================
+         TYPED.JS
+    ========================================== -->
+
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-  <!-- Setup and start animation! -->
 
+  <!-- =========================================
+         CUSTOM JAVASCRIPT
+    ========================================== -->
 
-  <script>
-    var typed = new Typed('#element', {
-  strings: [
-    'Web Developer',
-    'Machine Learning Enthusiast',
-    'Problem Solver',
-    'Frontend Developer',
-    'Future AI Engineer'
-  ],
-  typeSpeed: 60,
-  backSpeed: 40,
-  loop: true
-});
-  </script>
-  <script>
-  const toggleIcon = document.getElementById('themeToggle');
-
-  toggleIcon.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    
-    // Optional: Change icon from moon to sun
-    if (document.body.classList.contains('light-mode')) {
-      toggleIcon.classList.remove('fa-moon');
-      toggleIcon.classList.add('fa-sun');
-    } else {
-      toggleIcon.classList.remove('fa-sun');
-      toggleIcon.classList.add('fa-moon');
-    }
-  });
-</script>
-
+  <script src="script.js"></script>
 
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
